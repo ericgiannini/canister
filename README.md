@@ -1,1 +1,1 @@
-# Locker - an iOS app with Realm
+# Canister - an iOS app with Realm
