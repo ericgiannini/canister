@@ -27,7 +27,13 @@ class TaskViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.blue
         
-        tableView.frame = CGRect(x: view.bounds.maxX, y: view.bounds.maxY, width: view.bounds.size.width, height: view.bounds.size.height)
+        //         tableView.register(ContactCell.self, forCellReuseIdentifier: ContactCell.cellIdentifier)
+        
+        tableView.frame = CGRect(x: 0, y: 20, width: view.bounds.size.width, height: view.bounds.size.height)
+        
+        tableView.dataSource = self
+        
+        tableView.delegate = self
         
         view.addSubview(tableView)
     }

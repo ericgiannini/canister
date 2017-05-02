@@ -15,6 +15,7 @@
 		99B7B9D71EB7EB940094939A /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B7B9D61EB7EB940094939A /* TaskViewController.swift */; };
 		99B7B9D91EB7EBAE0094939A /* OwnTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B7B9D81EB7EBAE0094939A /* OwnTaskViewController.swift */; };
 		99B7B9DB1EB7EE790094939A /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B7B9DA1EB7EE790094939A /* TabViewController.swift */; };
+		99B7B9DD1EB829B20094939A /* TaskTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B7B9DC1EB829B20094939A /* TaskTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		99B7B9D61EB7EB940094939A /* TaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		99B7B9D81EB7EBAE0094939A /* OwnTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnTaskViewController.swift; sourceTree = "<group>"; };
 		99B7B9DA1EB7EE790094939A /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		99B7B9DC1EB829B20094939A /* TaskTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				99B7B9DA1EB7EE790094939A /* TabViewController.swift */,
 				99B7B9C51EB7E86C0094939A /* ViewController.swift */,
 				99B7B9D61EB7EB940094939A /* TaskViewController.swift */,
+				99B7B9DC1EB829B20094939A /* TaskTVC.swift */,
 				99B7B9D81EB7EBAE0094939A /* OwnTaskViewController.swift */,
 			);
 			path = locker;
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B7B9DD1EB829B20094939A /* TaskTVC.swift in Sources */,
 				99B7B9D91EB7EBAE0094939A /* OwnTaskViewController.swift in Sources */,
 				99B7B9C61EB7E86C0094939A /* ViewController.swift in Sources */,
 				99B7B9C41EB7E86C0094939A /* AppDelegate.swift in Sources */,
@@ -317,6 +321,7 @@
 				99B7B9D41EB7E86C0094939A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
