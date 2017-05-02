@@ -16,11 +16,20 @@ class TaskViewController: UIViewController {
         
     }
     
+    // MARK: - Properties
+    let tableView = UITableView()
+    var tasks = [String]()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.blue
+        
+        tableView.frame = CGRect(x: view.bounds.maxX, y: view.bounds.maxY, width: view.bounds.size.width, height: view.bounds.size.height)
+        
+        view.addSubview(tableView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,4 +48,30 @@ class TaskViewController: UIViewController {
     }
     */
 
+}
+
+// MARK: - UITableViewDataSource
+
+extension TaskViewController : UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tasks.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellIdentifier = "cell" // to be refactored immediately
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        return cell
+    }
+    
+}
+
+// MARK: - UITableViewDelegate
+
+
+extension TaskViewController : UITableViewDelegate {
+    
+    private func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return "You have \(tasks.count) tasks"
+    }
 }

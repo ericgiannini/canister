@@ -27,7 +27,6 @@ class TabViewController: UITabBarController {
         
         initialTabBar.tabBarItem = tabBarItem
 
-        
         return initialTabBar
     }()
     
