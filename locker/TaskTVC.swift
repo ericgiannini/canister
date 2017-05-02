@@ -10,30 +10,42 @@ import UIKit
 
 class TaskTVC: UITableViewCell {
     
+    static let cellIdentifier = "tableViewCell"
 
-    lazy public weak var title: UILabel = {
-    
+    lazy public var title: UILabel = {
+        let title = UILabel()
+
+        return title
     }()
-    lazy public weak var priority: UILabel = {
     
+    lazy public var priority: UILabel = {
+        let priority = UILabel()
+        
+        return priority
+        }()
+    
+    lazy public var check: UIButton = {
+        let check = UIButton()
+        
+        return check
     }()
-    lazy public weak var check: UIButton = {
     
-    }()
-    lazy public weak var spinner: UIActivityIndicatorView = {
+    lazy public var spinner: UIActivityIndicatorView = {
+        let spinner = UIActivityIndicatorView()
     
+        return spinner
     }()
     
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        // contentView
+        [title, priority, check, spinner].forEach(contentView.addSubview)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 
 }
